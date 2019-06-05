@@ -1,5 +1,131 @@
 <html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="jquery.js"></script>
+	</head>
 	<body>
-		Coming soon!
+
+
+		<center><h1 class="heading fade-in one">What are you thinking?</h1></center>
+
+
+		<section class="head-section fade-in two">
+			<div class="flex-grid">
+			  <div class="col">
+			  	<center>
+					<h1 class="mainHeading fade-in four">Stream</h1>
+					<p class="subHeading fade-in five">A tool for your thoughts 💭</p>	
+					<p class="secondarySubHeading fade-in six">Stream is a micro-journaling app designed to make journaling easy and delightful.</p>	  		
+			  	</center>
+			  </div>
+			</div>
+		</section>
+
+		<!-- Message UI -->
+		<section class="section fade-in three">
+			<div class="flex-grid">
+			  <div class="col">
+			  	<img src="message.png" class="image1"/>
+			  </div>
+			  <div class="col">
+			  		<h1 class="threadHeading">Message UI</h1>
+					<p class="threadSubHeading">A tool for your thoughts.</p>
+			  </div>
+			</div>
+		</section>
+
+		<!-- Message UI -->
+		<section class="section fade-in three">
+			<div class="flex-grid">
+			  <div class="col">
+			  		<h1 class="threadHeading">Categories</h1>
+					<p class="threadSubHeading">A tool for your thoughts.</p>
+			  </div>
+			  <div class="col">
+			  	<img src="categories.png" class="image1"/>
+			  </div>
+			</div>
+		</section>
+
+		<section class="section fade-in three">
+			<div class="flex-grid">
+			  <div class="col">
+			  	<img src="audio.png" class="image1"/>
+			  </div>
+			  <div class="col">
+			  		<h1 class="threadHeading">Audio Notes <br/> & transcription</h1>
+					<p class="threadSubHeading">A tool for your thoughts.</p>
+			  </div>
+			</div>
+		</section>
+
+		<section class="section fade-in three">
+			<div class="flex-grid">
+			  <div class="col">
+			  	<center><img src="threads.png" class="image2"/></center>
+			  </div>
+			</div>
+
+			<div class="flex-grid">
+			  <div class="col">
+			  	<center>
+					<h1 class="threadHeading">Threads</h1>
+					<p class="threadSubHeading">A tool for your thoughts.</p>
+				</center>
+			  </div>
+			</div>
+		</section>
+		
+		<section class="section fade-in three">
+			<div class="flex-grid">
+			  <div class="col">
+			  	<img src="search.png" class="image1"/>
+			  </div>
+			  <div class="col">
+			  		<h1 class="threadHeading">Search</h1>
+					<p class="threadSubHeading">A tool for your thoughts.</p>
+			  </div>
+			</div>
+		</section>
+
+		<section class="section fade-in three">
+			<div class="flex-grid">
+			  <div class="col">
+			  		<h1 class="threadHeading">Twitter</h1>
+					<p class="threadSubHeading">A tool for your thoughts.</p>
+			  </div>
+			  <div class="col">
+			  	<img src="twitter.png" class="image1"/>
+			  </div>
+			</div>
+		</section>
+
+		<section class="footer-section fade-in three">
+
+		</section>
 	</body>
+
+
+	<script>
+
+	$(document).on("scroll", function () {
+	  var pageTop = $(document).scrollTop()
+	  var pageBottom = pageTop + $(window).height()
+	  var tags = $("section")
+
+	  for (var i = 0; i < tags.length; i++) {
+	    var tag = tags[i]
+
+	    if ($(tag).position().top < pageBottom) {
+	      $(tag).addClass("visible")
+	    } else {
+	      $(tag).removeClass("visible")
+	    }
+	  }
+	})
+
+	</script>
 </html>
+
+

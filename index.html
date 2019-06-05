@@ -17,7 +17,10 @@
 			  	<center>
 					<h1 class="mainHeading fade-in four">Stream</h1>
 					<p class="subHeading fade-in five">A tool for your thoughts 💭</p>	
-					<p class="secondarySubHeading fade-in six">Stream is a micro-journaling app designed to save your most important thoughts and ideas.</p>	  		
+					<p class="secondarySubHeading fade-in six">Stream is a micro-journaling app designed to save your most important thoughts and ideas.</p>
+					<a href="https://itunes.apple.com/us/app/stream-document-your-thoughts/id1462716550" target="_blank" class="appstoreLink fade-in six">
+						Download Stream
+					</a>	  		
 			  	</center>
 			  </div>
 			</div>
@@ -42,26 +45,26 @@
 		<section class="section fade-in three">
 			<div class="flex-grid fade">
 			  <div class="col">
-			  	<h1 class="threadHeading">Private</h1>
-				<p class="threadSubHeading">
-					All your thoughts are stored locally on your phone. We're not hoarding your notes on a central database that can be hacked. You're in control of your information. 
-				</p>
+			  		<h1 class="threadHeading">Categories</h1>
+					<p class="threadSubHeading">You can bucket your thoughts into different categories by pressing '+', selecting your category and typing away your thoughts. A category for ideas, things you're grateful for, advice, etc.</p>
 			  </div>
 			  <div class="col">
-				<img src="message.png" class="image1"/>
+			  	<img src="categories.png" class="image1"/>
 			  </div>
 			</div>
 		</section>
+
 
 		<!-- Message UI -->
 		<section class="section fade-in three">
 			<div class="flex-grid fade">
 			  <div class="col">
-			  	<img src="categories.png" class="image1"/>
-			  </div>
-			  <div class="col">
-			  		<h1 class="threadHeading">Categories</h1>
-					<p class="threadSubHeading">You can bucket your thoughts into different categories by pressing '+', selecting your category and typing away your thoughts. A category for ideas, things you're grateful for, advice, etc.</p>
+			  	<center>
+				  	<h1 class="threadHeading">Private</h1>
+					<p class="threadSubHeading1">
+						All your thoughts are stored locally on your phone. We're not hoarding your notes on a central database that can be hacked. You're in control of your information. 
+					</p>
+				</center>
 			  </div>
 			</div>
 		</section>
@@ -69,7 +72,7 @@
 		<section class="section fade-in three">
 			<div class="flex-grid fade">
 			  <div class="col">
-			  		<h1 class="threadHeading">Audio Notes <br/> & transcription</h1>
+			  		<h1 class="threadHeading">Audio notes <br/> & transcription</h1>
 					<p class="threadSubHeading">You can easily save audio notes and play your notes back by double tapping on your note. The notes are also automatically transcribed using Apple's Speechkit which is helpful when you want to search your notes or share them.</p>
 			  </div>
 			  <div class="col">
@@ -132,7 +135,7 @@
 		    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
 		    $(".flex-grid").each(function() {
 		      /* Check the location of each desired element */
-		      var objectBottom = $(this).offset().top + $(this).outerHeight() - 500;
+		      var objectBottom = $(this).offset().top + 100;
 		      
 		      /* If the element is completely within bounds of the window, fade it in */
 		      if (objectBottom < windowBottom) { //object comes into view (scrolling down)

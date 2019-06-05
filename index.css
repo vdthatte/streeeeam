@@ -10,20 +10,56 @@ body {
 	 	font-size: 64px;
 	 	z-index: -999;
 	 	margin-top: 25%;
-	 	margin-left: 10%;
 	 	position: fixed;
 	 	background-color: #fff;
+	 	text-align: center;
 	 }
 
 	 .head-section{
 	 	padding-top: 3%;
-	 	height: 85%;
+	 	height: 75%;
 	 	background-color: #000;
 	 }
 
 	 .footer-section{
 	 	height: 20%;
 	 	background-color: #000;
+	 }
+
+	 .appstoreLink{
+	 	font-size: 1.8vw;
+	 	border-width: 2px;
+	 	border-color: #fff;
+	 	border-style: solid;
+	 	color: #fff;
+	 	border-radius: 50px;
+	 	background-color: none;
+	 	padding-top: 1%;
+	 	padding-bottom: 1%;
+	 	padding-left: 3%;
+	 	padding-right: 3%;
+	 	text-decoration: none;
+	 	transition: 0.5s;
+	 	font-weight: 700;
+	 	margin-bottom: 2.5%;
+	 }
+
+	.appstoreLink:hover{
+	 	font-size: 1.8vw;
+	 	border-width: 2px;
+	 	border-color: #fff;
+	 	border-style: solid;
+	 	color: #000;
+	 	border-radius: 50px;
+	 	background-color: #fff;
+	 	padding-top: 1%;
+	 	padding-bottom: 1%;
+	 	padding-left: 3%;
+	 	padding-right: 3%;
+	 	text-decoration: none;
+	 	transition: 0.5s;
+	 	font-weight: 700;
+	 	margin-bottom: 2.5%;
 	 }
 
 	 .mainImage{
@@ -38,38 +74,38 @@ body {
 
 	 .mainHeading{
 	 	color: #fff;
-	 	font-size: 10vw;
+	 	font-size: 9vw;
 		line-height: 0.2em;
 		font-weight: 700;
 	 }
 
 	 .subHeading{
 	 	color: #FFF;
-	 	font-size: 4vw;
+	 	font-size: 2.8vw;
 	 	line-height: 1em;
 	 }
 
 	.secondarySubHeading{
 	 	color: #9C9C9C;
-	 	font-size: 3vw;
+	 	font-size: 2.8vw;
 	 	line-height: 1em;
 	 	width: 50%;
 	 	opacity: 0.5;
+	 	padding-bottom: 2.5%;
 	 }
 
 	 .threadHeading{
 	 	color: #fff;
-	 	font-size: 4vw;
 	 	line-height: 1em;
 	 	margin-left: 10%;
 	 	margin-right: 10%;
 	 	padding-top: 5%;
-	 	font-size: 4.4vw;
+	 	font-size: 4vw;
 	 }
 
 	 .threadSubHeading, .threadSubHeading1{
 	 	color: #fff;
-	 	font-size: 2.8vw;
+	 	font-size: 2.4vw;
 	 	line-height: 1em;
 	 	padding-bottom: 10%;
 	 	margin-left: 10%;

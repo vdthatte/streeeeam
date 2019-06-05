@@ -44,14 +44,13 @@ body {
 	 }
 
 	 .subHeading{
-	 	color: #fff;
+	 	color: #FFF;
 	 	font-size: 4vw;
 	 	line-height: 1em;
-	 	opacity: 0.5;
 	 }
 
 	.secondarySubHeading{
-	 	color: #fff;
+	 	color: #9C9C9C;
 	 	font-size: 3vw;
 	 	line-height: 1em;
 	 	width: 50%;
@@ -60,21 +59,27 @@ body {
 
 	 .threadHeading{
 	 	color: #fff;
-	 	font-size: 3.5vw;
+	 	font-size: 4vw;
 	 	line-height: 1em;
 	 	margin-left: 10%;
 	 	margin-right: 10%;
 	 	padding-top: 5%;
+	 	font-size: 4.4vw;
 	 }
 
-	 .threadSubHeading{
+	 .threadSubHeading, .threadSubHeading1{
 	 	color: #fff;
-	 	font-size: 3vw;
+	 	font-size: 2.8vw;
 	 	line-height: 1em;
 	 	padding-bottom: 10%;
 	 	margin-left: 10%;
 	 	margin-right: 10%;
 	 	opacity: 0.5;
+	 }
+
+	 .threadSubHeading1{
+	 	width: 50%;
+	 	font-size: 2.8vw;
 	 }
 
 
@@ -118,21 +123,21 @@ body {
 	}
 
 	.fade-in.four {
-	  -webkit-animation-delay: 1.9s;
-	  -moz-animation-delay: 1.9s;
-	  animation-delay: 1.9s;
+	  -webkit-animation-delay: 2.0s;
+	  -moz-animation-delay: 2.0s;
+	  animation-delay: 2.0s;
 	}
 
 	.fade-in.five {
-	  -webkit-animation-delay: 2.1s;
-	  -moz-animation-delay: 2.1s;
-	  animation-delay: 2.1s;
+	  -webkit-animation-delay: 2.4s;
+	  -moz-animation-delay: 2.4s;
+	  animation-delay: 2.4s;
 	}
 
 	.fade-in.six {
-	  -webkit-animation-delay: 2.2s;
-	  -moz-animation-delay: 2.2s;
-	  animation-delay: 2.2s;
+	  -webkit-animation-delay: 2.8s;
+	  -moz-animation-delay: 2.8s;
+	  animation-delay: 2.8s;
 	}
 
 

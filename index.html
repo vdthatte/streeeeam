@@ -2,7 +2,8 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script src="jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 	</head>
 	<body>
 
@@ -10,13 +11,13 @@
 		<center><h1 class="heading fade-in one">What are you thinking?</h1></center>
 
 
-		<section class="head-section fade-in two">
+		<section class="head-section fade-in four">
 			<div class="flex-grid">
 			  <div class="col">
 			  	<center>
 					<h1 class="mainHeading fade-in four">Stream</h1>
 					<p class="subHeading fade-in five">A tool for your thoughts 💭</p>	
-					<p class="secondarySubHeading fade-in six">Stream is a micro-journaling app designed to make journaling easy and delightful.</p>	  		
+					<p class="secondarySubHeading fade-in six">Stream is a micro-journaling app designed to save your most important thoughts and ideas.</p>	  		
 			  	</center>
 			  </div>
 			</div>
@@ -24,76 +25,93 @@
 
 		<!-- Message UI -->
 		<section class="section fade-in three">
-			<div class="flex-grid">
+			<div class="flex-grid fade">
 			  <div class="col">
 			  	<img src="message.png" class="image1"/>
 			  </div>
 			  <div class="col">
 			  		<h1 class="threadHeading">Message UI</h1>
-					<p class="threadSubHeading">A tool for your thoughts.</p>
+					<p class="threadSubHeading">
+					Stream opens right into a text box so you that can start typing as soon as you have a new thought. It's as simple as sending a message to yourself.
+					</p>
 			  </div>
 			</div>
 		</section>
 
 		<!-- Message UI -->
 		<section class="section fade-in three">
-			<div class="flex-grid">
+			<div class="flex-grid fade">
 			  <div class="col">
-			  		<h1 class="threadHeading">Categories</h1>
-					<p class="threadSubHeading">A tool for your thoughts.</p>
+			  	<h1 class="threadHeading">Private</h1>
+				<p class="threadSubHeading">
+					All your thoughts are stored locally on your phone. We're not hoarding your notes on a central database that can be hacked. You're in control of your information. 
+				</p>
 			  </div>
+			  <div class="col">
+				<img src="message.png" class="image1"/>
+			  </div>
+			</div>
+		</section>
+
+		<!-- Message UI -->
+		<section class="section fade-in three">
+			<div class="flex-grid fade">
 			  <div class="col">
 			  	<img src="categories.png" class="image1"/>
 			  </div>
+			  <div class="col">
+			  		<h1 class="threadHeading">Categories</h1>
+					<p class="threadSubHeading">You can bucket your thoughts into different categories by pressing '+', selecting your category and typing away your thoughts. A category for ideas, things you're grateful for, advice, etc.</p>
+			  </div>
 			</div>
 		</section>
 
 		<section class="section fade-in three">
-			<div class="flex-grid">
+			<div class="flex-grid fade">
+			  <div class="col">
+			  		<h1 class="threadHeading">Audio Notes <br/> & transcription</h1>
+					<p class="threadSubHeading">You can easily save audio notes and play your notes back by double tapping on your note. The notes are also automatically transcribed using Apple's Speechkit which is helpful when you want to search your notes or share them.</p>
+			  </div>
 			  <div class="col">
 			  	<img src="audio.png" class="image1"/>
 			  </div>
-			  <div class="col">
-			  		<h1 class="threadHeading">Audio Notes <br/> & transcription</h1>
-					<p class="threadSubHeading">A tool for your thoughts.</p>
-			  </div>
 			</div>
 		</section>
 
 		<section class="section fade-in three">
-			<div class="flex-grid">
+			<div class="flex-grid fade">
 			  <div class="col">
 			  	<center><img src="threads.png" class="image2"/></center>
 			  </div>
 			</div>
 
-			<div class="flex-grid">
+			<div class="flex-grid fade">
 			  <div class="col">
 			  	<center>
 					<h1 class="threadHeading">Threads</h1>
-					<p class="threadSubHeading">A tool for your thoughts.</p>
+					<p class="threadSubHeading1">Stream supports threads because every thought builds off of another thought. You can also share an entire thread on twitter with a single tap (still in beta)</p>
 				</center>
 			  </div>
 			</div>
 		</section>
 		
 		<section class="section fade-in three">
-			<div class="flex-grid">
+			<div class="flex-grid fade">
 			  <div class="col">
 			  	<img src="search.png" class="image1"/>
 			  </div>
 			  <div class="col">
 			  		<h1 class="threadHeading">Search</h1>
-					<p class="threadSubHeading">A tool for your thoughts.</p>
+					<p class="threadSubHeading">You can search any of your saved notes seamlessly.</p>
 			  </div>
 			</div>
 		</section>
 
 		<section class="section fade-in three">
-			<div class="flex-grid">
+			<div class="flex-grid fade">
 			  <div class="col">
-			  		<h1 class="threadHeading">Twitter</h1>
-					<p class="threadSubHeading">A tool for your thoughts.</p>
+			  		<h1 class="threadHeading">Share on Twitter</h1>
+					<p class="threadSubHeading">The great part about having incredible thoughts is sharing them with others. Stream let's you seamlessly share your thoughts on Twitter.</p>
 			  </div>
 			  <div class="col">
 			  	<img src="twitter.png" class="image1"/>
@@ -109,21 +127,22 @@
 
 	<script>
 
-	$(document).on("scroll", function () {
-	  var pageTop = $(document).scrollTop()
-	  var pageBottom = pageTop + $(window).height()
-	  var tags = $("section")
-
-	  for (var i = 0; i < tags.length; i++) {
-	    var tag = tags[i]
-
-	    if ($(tag).position().top < pageBottom) {
-	      $(tag).addClass("visible")
-	    } else {
-	      $(tag).removeClass("visible")
-	    }
-	  }
-	})
+		$(window).on("load",function() {
+		  $(window).scroll(function() {
+		    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+		    $(".flex-grid").each(function() {
+		      /* Check the location of each desired element */
+		      var objectBottom = $(this).offset().top + $(this).outerHeight() - 500;
+		      
+		      /* If the element is completely within bounds of the window, fade it in */
+		      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+		        if ($(this).css("opacity")==0) {$(this).fadeTo(1000,1);}
+		      } else { //object goes out of view (scrolling up)
+		        if ($(this).css("opacity")==1) {$(this).fadeTo(1000,0);}
+		      }
+		    });
+		  }).scroll(); //invoke scroll-handler on page-load
+		});
 
 	</script>
 </html>
